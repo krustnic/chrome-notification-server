@@ -29,3 +29,8 @@ Create zip archive:
 ```sh
 grunt production
 ```
+
+## License
+Copyright (c) 2015 Mityakov Aleksandr.
+
+Released under the [MIT license](https://tldrlegal.com/license/mit-license).
