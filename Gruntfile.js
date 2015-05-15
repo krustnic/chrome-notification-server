@@ -90,5 +90,5 @@ module.exports = function(grunt) {
   
   grunt.registerTask( 'build', [ 'browserify' ] );  
   grunt.registerTask( 'test' , [ 'jasmine_node' ] );
-  grunt.registerTask( 'production' , [ 'clean', 'copy', 'compress', 'notify:production' ] );   
+  grunt.registerTask( 'production' , [ 'build', 'clean', 'copy', 'compress', 'notify:production' ] );   
 };
