@@ -7,7 +7,7 @@
 var platform = require("./chrome-notifications");
 
 var options  = {
-	port    : 9000,
+	port    : 8989,
 	type    : "basic",
 	title   : "Note!",
 	message : "Hello world"
