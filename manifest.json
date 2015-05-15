@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome Notification Server",
+  "version": "1.0.0",
+  "minimum_chrome_version": "33.0",
+  "description": "Creates HTTP Notification Center from Chrome",
+  "icons": {     
+    "48": "images/icon48x48.png",
+    "128": "images/icon128x128.png" 
+  },
+  "app": {
+    "background": {
+      "scripts": ["js/dist/background.js"]
+    }
+  },  
+  "sockets": {
+    "tcpServer": { "listen" : ":*" }
+  },  
+  "permissions": [
+    "notifications", "storage"
+  ]
+}
