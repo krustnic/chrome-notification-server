@@ -23,3 +23,9 @@ For now there are two available commands:
 curl --data '{"command":"notifications","data": { "type":"basic", "title":"Message", "message":"Hello!" } }' localhost:8989
 ```
 That's all, notification will be shown. For example of working with Chrome Notification Server from `node` checkout folder `examples`.
+
+## Build
+Create zip archive:
+```sh
+grunt production
+```
