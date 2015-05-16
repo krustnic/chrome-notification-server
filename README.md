@@ -20,7 +20,7 @@ For now there are two available commands:
 1. Install chrome application from [chrome store](https://chrome.google.com/webstore/detail/chrome-notification-serve/cahgolnbmcechdpojohdlcjbnhadfbne?utm_source=chrome-ntp-icon)
 2. Send http request from somewhere, for example `curl`:
 ```sh
-curl --data '{"command":"notifications","data": { "type":"basic", "title":"Message", "message":"Hello!" } }' localhost:8989
+curl --data '{"command":"notification","data": { "type":"basic", "title":"Message", "message":"Hello!" } }' localhost:8989
 ```
 That's all, notification will be shown. For example of working with Chrome Notification Server from `node` checkout folder `examples`.
 
