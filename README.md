@@ -17,7 +17,7 @@ For now there are two available commands:
 * `notification` - shows chrome notification. "data" parameter should be a valid options object for  [chrome.notifications.create](https://developer.chrome.com/apps/notifications#method-create) API. The only difference is that if the `iconUrl` property does not exist there is no error and default icon is used. If you want your own image you can set `iconUrl` as [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/data_URIs) string.
 
 ## Example
-1. Install chrome application from [chrome store](https://chrome.google.com/webstore/detail/chrome-notification-serve/cahgolnbmcechdpojohdlcjbnhadfbne?utm_source=chrome-ntp-icon)
+1. Install chrome application from [chrome store](https://chrome.google.com/webstore/detail/chrome-notification-serve/cahgolnbmcechdpojohdlcjbnhadfbne?utm_source=chrome-ntp-icon). Launch it and choose the port.
 2. Send http request from somewhere, for example `curl`:
 ```sh
 curl --data '{"command":"notification","data": { "type":"basic", "title":"Message", "message":"Hello!" } }' localhost:8989
